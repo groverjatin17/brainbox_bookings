@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background-color: black;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.view-section {
+  width: 60%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  padding: 0 10px;
+}
+
+li a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
+  color: white;
+  background: transparent;
+  transition: border-color 0.2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  color: white;
+  margin: 100px 300px 50px 100px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  border: 1px solid white;
+  border-radius: 25px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(0.9);
+}
+
+button img,
+button span {
+  vertical-align: middle;
+  font-size: large;
+}
+
+button span {
+  padding-left: 10px;
+  line-height: 20px;
+}
+
+.content h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.nav-squares {
+  width: 40%;
+  display: flex;
+}
+
+.nav-squares .column {
+  width: 50%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.nav-squares .column div {
+  height: 50%;
+}
+
+.nav-squares .column div:hover {
+  transform: scale(0.95);
+  z-index: 999;
+  cursor: pointer;
+}
+
+.nav-squares .column div:focus {
+  background-color: black;
+}
+.explore {
+  border-radius: 15px 0 0 0;
+  background-color: #333ffa;
+  position: relative;
+}
+
+.stories {
+  position: relative;
+  border-radius: 0 15px 0 0;
+
+  background-color: #fe7b27;
+}
+
+.about {
+  position: relative;
+  border-radius: 0 0 0 15px;
+  background-color: #e6e1fe;
+}
+
+.about h1,
+.about p {
+  color: #6e78d1;
+}
+
+.help {
+  position: relative;
+  border-radius: 0 0 15px 0;
+  background-color: #797ed9;
+}
+
+.help h1,
+.help p {
+  color: #e6e1fe;
+}
+
+.box-content {
+  position: absolute;
+  bottom: 0px;
+  left: 30px;
+  height: 150px;
+  color: white;
+}
+
+.box-content h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.arrowUpRight {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.active-box {
+  background: black;
+  transform: scale(0.95);
+  border: 2px solid white;
 }
