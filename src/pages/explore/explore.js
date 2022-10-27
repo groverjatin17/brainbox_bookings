@@ -10,7 +10,7 @@ export default function Explore() {
       <div className="content">
         <h1>This is the explore section</h1>
         <p>Lets Explore</p>
-        <button onClick={() => navigate("/home")}>
+        <button onClick={() => navigate("/")}>
           <img src={arrowLeft} alt="arrowLeft" />
           <span>Back to Home</span>
         </button>

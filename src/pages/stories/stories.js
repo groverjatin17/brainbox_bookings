@@ -15,7 +15,7 @@ export default function Stories() {
           of Booking Holdings Inc. (NASDAQ: BKNG), Booking.com’s mission is to
           make it easier for everyone to experience the world.
         </p>
-        <button onClick={() => navigate("/home")}>
+        <button onClick={() => navigate("/")}>
           <img src={arrowLeft} alt="arrowLeft" />
           <span>Back to Home</span>
         </button>

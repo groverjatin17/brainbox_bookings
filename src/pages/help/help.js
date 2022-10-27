@@ -13,7 +13,7 @@ export default function Help() {
           Please feel free to write us a mail at{" "}
           <a href="mailto:groverjatin17@gmail.com">groverjatin17@gmail.com</a>
         </p>
-        <button onClick={() => navigate("/home")}>
+        <button onClick={() => navigate("/")}>
           <img src={arrowLeft} alt="arrowLeft" />
           <span>Back to Home</span>
         </button>
